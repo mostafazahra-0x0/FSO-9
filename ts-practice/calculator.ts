@@ -20,5 +20,9 @@ const calculator = (
 try {
   console.log(calculator(2, 0, 'divide'));
 } catch (error: unknown) {
-  console.log('can’t divide by 0');
+  let errorMessage = 'Something went wrong: ';
+  if (error instanceof Error) {
+    errorMessage += error.message;
+  }
+  console.log(errorMessage);
 }
