@@ -1,5 +1,4 @@
 export type Operation = 'multiply' | 'add' | 'divide';
-
 export const calculator = (
   a: number,
   b: number,
