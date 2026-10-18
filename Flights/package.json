@@ -2,11 +2,12 @@
   "name": "flights",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "dev": "concurrently \"tsc --watch\" \"node --watch --experimental-transform-types index.ts\"",
-    "start": "node --experimental-transform-types index.ts",
+    "dev": "concurrently \"tsc --watch\" \"node --watch src/index.ts\"",
+    "start": "node src/index.ts",
     "lint": "eslint ."
   },
   "author": "",
