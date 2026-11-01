@@ -4,7 +4,7 @@ export type Diagnosis = {
   code: string;
   name: string;
   latin?: string;
-}
+};
 
 export const Gender = {
   Male: 'male',
